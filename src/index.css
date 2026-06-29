@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* ===== 默认主题：暖橙 ===== */
+:root {
+  --color-primary: #FF6B35;
+  --color-primary-light: #FF8C5A;
+  --color-primary-dark: #E55A2B;
+  --color-cardio: #FF6B35;
+  --color-strength: #2EC4B6;
+  --color-period: #FFB3B3;
+  --color-bg: #FFF8F5;
+  --color-surface: #FFFFFF;
+  --color-text: #2D2D2D;
+  --color-text-light: #8E8E8E;
+  --color-completed: #B0B0B0;
+  --color-border: #E8E0DC;
+  --color-success: #22C55E;
+}
+
+[data-theme="ocean"] {
+  --color-primary: #3B82F6;
+  --color-primary-light: #60A5FA;
+  --color-primary-dark: #2563EB;
+  --color-cardio: #3B82F6;
+  --color-strength: #F59E0B;
+  --color-bg: #F0F7FF;
+  --color-surface: #FFFFFF;
+  --color-border: #DBEAFE;
+}
+
+[data-theme="forest"] {
+  --color-primary: #22C55E;
+  --color-primary-light: #4ADE80;
+  --color-primary-dark: #16A34A;
+  --color-cardio: #22C55E;
+  --color-strength: #8B5CF6;
+  --color-bg: #F4FFF6;
+  --color-surface: #FFFFFF;
+  --color-border: #DCFCE7;
+}
+
+[data-theme="berry"] {
+  --color-primary: #8B5CF6;
+  --color-primary-light: #A78BFA;
+  --color-primary-dark: #7C3AED;
+  --color-cardio: #8B5CF6;
+  --color-strength: #F97316;
+  --color-bg: #F9F5FF;
+  --color-surface: #FFFFFF;
+  --color-border: #EDE9FE;
+}
+
+[data-theme="sakura"] {
+  --color-primary: #F472B6;
+  --color-primary-light: #F9A8D4;
+  --color-primary-dark: #EC4899;
+  --color-cardio: #F472B6;
+  --color-strength: #06B6D4;
+  --color-bg: #FFF5F9;
+  --color-surface: #FFFFFF;
+  --color-border: #FCE7F3;
+}
+
+/* ===== 全局基础样式 ===== */
+html {
+  font-size: 18px !important;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 18px;
+}
+
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
