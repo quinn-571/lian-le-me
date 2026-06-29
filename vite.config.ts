@@ -22,8 +22,8 @@ export default defineConfig({
         background_color: '#FFF8F5',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: './',
-        scope: './',
+        start_url: '/lian-le-me/',
+        scope: '/lian-le-me/',
         icons: [
           {
             src: '/icon-192.svg',
